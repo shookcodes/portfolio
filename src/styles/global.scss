@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "Clicker Script";
+  src: url("../../static/fonts/ClickerScript-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rochester Regular";
+  src: url("../../static/fonts/Rochester-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mullish Regular";
+  src: url("../../static/fonts/Mulish-Regular.ttf") format("truetype");
+}
+
+//font vars
+$hfont1: "Clicker Script";
+$hfont2: "Rochester Regular";
+$paragraph: "Mullish Regular";
+$pFontSize: calc(16px + 2vh);
+$helloFontSize: calc(20px + 20vw);
+$helloFontSizeHorizontaliPhone: calc(20px + 12vw);
+$h1FontSize: calc(24px + 4vw);
+
+//iPhone horizontal size
+$iPhoneXWidth: 812px;
+$iPhoneXHeight: 375px;
+$iPhonePlusWidth: 736px;
+$iPhonePlusHeight: 414px;
+
+@mixin iPhoneHorizontal(
+  $paddingTop,
+  $paddingTopVal,
+  $marginTop,
+  $marginTopVal,
+  $paddingLeft,
+  $paddingLeftVal,
+  $paddingRight,
+  $paddingRightVal,
+  $fontSize,
+  $fontVal
+) {
+  @media (min-width: $iPhonePlusWidth) and (max-width: $iPhoneXWidth) and (min-height: $iPhoneXHeight) and (max-height: $iPhonePlusHeight) {
+    #{$paddingTop}: $paddingTopVal;
+    #{$marginTop}: $marginTopVal;
+    #{$paddingLeft}: $paddingLeftVal;
+    #{$paddingRight}: $paddingRightVal;
+    #{$fontSize}: $fontVal;
+  }
+}
+
+@mixin textPadding() {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+@mixin boxShadow() {
+  filter: drop-shadow(5px 1px 6px rgba(56, 3, 93, 0.7));
+}
+
+@mixin boxShadowSmall() {
+  filter: drop-shadow(3px 1px 3px rgba(56, 3, 93, 0.8));
+}
+
+@mixin paintedBackground() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: $splashBackground;
+  background-attachment: fixed;
+  background-size: cover;
+  @include boxShadow();
+}
+
+@mixin paintedBackgroundUpsideDown() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: $splash180Background;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@mixin clipText() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+
+//shadow var
+$imageShadow: 4px 4px 15px rgba(21, 30, 54, 0.5);
+
+//background var
+$splashBackground: url("../img/splash.jpg");
+$splash180Background: url("../img/splash180.jpg");
+
+//color variables:
+$white: #fff;
+$turquoise: #1c8f8f;
+$hoverTurquoise: #85c3cf;
+$brightCoral: #fb2c68;
+$coralHover: #fa7c7b;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: $white;
+  text-align: center;
+  font-family: $paragraph;
+
+  h1 {
+    font-size: $h1FontSize;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+  }
+
+  h2 {
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+  }
+}
+
+html {
+  height: 200%;
+}
+
+p {
+  font-family: $paragraph;
+  font-size: $pFontSize;
+}
+
+//hamburger menu styles
+
+.hamburger-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .hamburger {
+    height: 7vmax;
+    width: 7vmax;
+    padding: 18px;
+    z-index: 100;
+    color: $turquoise;
+
+    &:hover,
+    &:focus {
+      color: $hoverTurquoise;
+    }
+  }
+}
+
+/*
+.hamburger-menu {
+  background: rgba(11, 93, 114, 0.5);
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+}
+*/
+
+//home page styles
+.backsplash {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  text-align: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+}
+
+.hello {
+  font-size: $helloFontSize;
+  font-family: $hfont1;
+  font-weight: bolder;
+  text-align: center;
+  justify-content: center;
+
+  @include paintedBackground();
+
+  @include iPhoneHorizontal(
+    padding-top,
+    0,
+    margin-top,
+    0,
+    margin-left,
+    null,
+    margin-right,
+    null,
+    font-size,
+    $helloFontSizeHorizontaliPhone
+  );
+}
+
+.sarah {
+  text-align: center;
+  font-family: $paragraph;
+
+  @include textPadding();
+}
+
+.down {
+  margin-left: 0;
+  margin-right: 0;
+  width: 6vh;
+  height: 6vh;
+  color: $brightCoral;
+  align-self: center;
+  flex-grow: 2;
+  z-index: 200;
+  background: transparent;
+  &:hover,
+  &:focus {
+    color: $coralHover;
+  }
+
+  @include iPhoneHorizontal(
+    padding-top,
+    -12vh,
+    margin-top,
+    -12vh,
+    margin-left,
+    null,
+    margin-right,
+    null,
+    font-size,
+    null
+  );
+}
+
+//about page styles
+.about {
+  h1 {
+    @include paintedBackgroundUpsideDown();
+    @include boxShadowSmall();
+  }
+  font-size: 20px;
+
+  @include textPadding();
+
+  @include iPhoneHorizontal(
+    padding-top,
+    null,
+    margin-top,
+    null,
+    padding-left,
+    5vw,
+    padding-right,
+    5vw,
+    font-size,
+    null
+  );
+
+  .dev-icons {
+    font-size: 5vh;
+  }
+}
