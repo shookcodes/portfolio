@@ -1,0 +1,115 @@
+@import "../utilities/variables";
+
+@mixin iPhoneHorizontal(
+  $paddingTop,
+  $paddingTopVal,
+  $marginTop,
+  $marginTopVal,
+  $paddingLeft,
+  $paddingLeftVal,
+  $paddingRight,
+  $paddingRightVal,
+  $fontSize,
+  $fontVal
+) {
+  @media (min-width: $iPhonePlusWidth) and (max-width: $iPhoneXWidth) and (min-height: $iPhoneXHeight) and (max-height: $iPhonePlusHeight) {
+    #{$paddingTop}: $paddingTopVal;
+    #{$marginTop}: $marginTopVal;
+    #{$paddingLeft}: $paddingLeftVal;
+    #{$paddingRight}: $paddingRightVal;
+    #{$fontSize}: $fontVal;
+  }
+}
+
+@mixin iPhoneHorizontalSidePadding(
+  $paddingLeft,
+  $paddingLeftVal,
+  $paddingRight,
+  $paddingRightVal
+) {
+  @media (min-width: $iPhonePlusWidth) and (max-width: $iPhoneXWidth) and (min-height: $iPhoneXHeight) and (max-height: $iPhonePlusHeight) {
+    #{$paddingLeft}: $paddingLeftVal;
+    #{$paddingRight}: $paddingRightVal;
+  }
+}
+
+@mixin iPhoneHorizontalTop(
+  $paddingTop,
+  $paddingTopVal,
+  $marginTop,
+  $marginTopVal
+) {
+  @media (min-width: $iPhonePlusWidth) and (max-width: $iPhoneXWidth) and (min-height: $iPhoneXHeight) and (max-height: $iPhonePlusHeight) {
+    #{$paddingTop}: $paddingTopVal;
+    #{$marginTop}: $marginTopVal;
+  }
+}
+
+@mixin iPhoneHorizontalFont($fontSize, $fontVal) {
+  @media (min-width: $iPhonePlusWidth) and (max-width: $iPhoneXWidth) and (min-height: $iPhoneXHeight) and (max-height: $iPhonePlusHeight) {
+    #{$fontSize}: $fontVal;
+  }
+}
+
+@mixin sectionHeader() {
+  margin-top: 60px;
+  h1 {
+    font-family: $handlee;
+    letter-spacing: 3px;
+    @include paintedBackgroundUpsideDown();
+    @include boxShadowSmall();
+  }
+
+  p {
+    margin-bottom: 4vh;
+  }
+}
+
+@mixin textPadding() {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+@mixin boxShadow() {
+  filter: drop-shadow(5px 1px 6px rgba(56, 3, 93, 0.7));
+}
+
+@mixin boxShadowSmall() {
+  filter: drop-shadow(3px 1px 2px rgba(56, 3, 93, 0.8));
+}
+
+@mixin paintedBackground() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: $splashBackground;
+  background-attachment: fixed;
+  background-size: cover;
+  @include boxShadow();
+}
+
+@mixin paintedBackgroundUpsideDown() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: $splash180Background;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@mixin clipText() {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+}
+
+@mixin section() {
+  @include sectionHeader();
+  font-size: 20px;
+
+  @include textPadding();
+
+  @include iPhoneHorizontalSidePadding(padding-left, 5vw, padding-right, 5vw);
+
+  @include iPhoneHorizontalFont(font-size, $pFontSizeHorizontaliPhone);
+}

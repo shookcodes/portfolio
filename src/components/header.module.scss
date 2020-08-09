@@ -1,0 +1,88 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+//hamburger menu styles
+
+.container {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  z-index: 200;
+  background: white;
+  border-bottom: 2px solid #bd1891;
+  box-shadow: 0px 1px 4px rgba(122, 11, 93, 0.8);
+
+  .menuItems > * {
+    height: 7vmax;
+    width: 7vmax;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    z-index: 100;
+    text-decoration: none;
+    font-weight: bold;
+    background: white;
+
+    &:visited {
+      text-decoration: none;
+    }
+  }
+
+  .home {
+    color: $headerHome;
+    &:visited {
+      color: $headerHome;
+    }
+    &:hover,
+    &:focus {
+      color: $headerHomeHover;
+    }
+  }
+
+  .about {
+    color: $headerAbout;
+    &:visited {
+      color: $headerAbout;
+    }
+    &:hover,
+    &:focus {
+      color: $headerAboutHover;
+    }
+  }
+
+  .articles {
+    color: $headerArticles;
+    &:visited {
+      color: $headerArticles;
+    }
+    &:hover,
+    &:focus {
+      color: $headerArticlesHover;
+    }
+  }
+
+  .contact {
+    color: $headerContact;
+    &:visited {
+      color: $headerContact;
+    }
+    &:hover,
+    &:focus {
+      color: $headerContactHover;
+    }
+  }
+}
+
+/*
+  .hamburger-menu {
+    background: rgba(11, 93, 114, 0.5);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+  }
+  */

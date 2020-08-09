@@ -7,6 +7,7 @@ import { AiOutlineConsoleSql } from "react-icons/ai"
 import { FaReact } from "react-icons/fa"
 import { RiGatsbyLine } from "react-icons/ri"
 import { FaWordpressSimple } from "react-icons/fa"
+import { Link } from 'gatsby';
 
 
 
@@ -14,9 +15,9 @@ export default function About() {
     return (
         <div>
             <div className="backsplash"></div>
-            <div className="about">
+            <div className="about" id="about">
                 <h1>About</h1>
-                <div>I started my coding journey back in the MySpace days, but really dug into development about 5 years ago when I discovered PowerShell. At my employer, I mainly focus on automation using PowerShell, JavaScript, SQL, PHP. I also maintain my employer's WordPress site and develop custom pages and reports for the PowerSchool platform. In my personal time, I work with React (currenty focusing on Gatsby), SASS, and am diving into animated SVGs. From building PCs from scratch to developing responsive website, I enjoy exploring technology.  </div>
+                <div><p>I started my coding journey back in the MySpace days, but really dug into development about 5 years ago when I discovered PowerShell. At my employer, I mainly focus on automation using PowerShell, JavaScript, SQL, PHP. I also maintain my employer's WordPress site and develop custom pages and reports for the PowerSchool platform. In my personal time, I work with React (currenty focusing on Gatsby), SASS, and am diving into animated SVGs. From building PCs from scratch, to automation, to developing responsive websites, I enjoy exploring technology. </p> </div>
                 <div>
                     <h2>Tech</h2>
                     <span className="dev-icons">

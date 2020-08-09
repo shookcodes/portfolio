@@ -1,0 +1,46 @@
+//color variables:
+$white: #fff;
+$turquoise: #1c8f8f;
+$hoverTurquoise: #85c3cf;
+$brightCoral: #fb2c68;
+$coralHover: #fa7c7b;
+$darkPurple: #4b0c83;
+$headerHome: #0f9ea2;
+$headerHomeHover: #15c9cf;
+$headerAbout: #7b64b6;
+$headerAboutHover: #a58de3;
+$headerArticles: #e06752;
+$headerArticlesHover: #fc9583;
+$headerContact: #f32d8f;
+$headerContactHover: #fa7ab9;
+
+//testing fonts
+$amatic: "Amatic SC Regular";
+$badScript: "Bad Script Regular";
+$caveat: "Caveat Regular";
+$delius: "Delius Swash Caps";
+$handlee: "Handlee Regular";
+
+//font vars
+$hfont1: "Clicker Script";
+$hfont2: "Rochester Regular";
+$paragraph: "Mullish Regular";
+$helloFontSize: calc(20px + 20vw);
+$pFontSize: calc(16px + 1vh);
+$h1FontSize: calc(24px + 4vw);
+$h2FontSize: calc(20px + 2vw);
+$helloFontSizeHorizontaliPhone: calc(20px + 12vw);
+$pFontSizeHorizontaliPhone: calc(16px);
+
+//shadow var
+$imageShadow: 4px 4px 15px rgba(21, 30, 54, 0.5);
+
+//background var
+$splashBackground: url("../img/splash.jpg");
+$splash180Background: url("../img/splash180.jpg");
+
+//iPhone horizontal size
+$iPhoneXWidth: 812px;
+$iPhoneXHeight: 375px;
+$iPhonePlusWidth: 736px;
+$iPhonePlusHeight: 414px;
