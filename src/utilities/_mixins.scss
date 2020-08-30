@@ -51,17 +51,51 @@
   }
 }
 
-@mixin sectionHeader() {
+@mixin sectionHeaderOdd() {
   margin-top: 60px;
   h1 {
-    font-family: $handlee;
+    font-family: $merienda;
     letter-spacing: 3px;
     @include paintedBackgroundUpsideDown();
     @include boxShadowSmall();
   }
+}
+
+@mixin sectionOdd() {
+  @include sectionHeaderOdd();
+  font-size: 20px;
+  height: 100vh;
+
+  @include textPadding();
+  @include iPhoneHorizontalSidePadding(padding-left, 5vw, padding-right, 5vw);
 
   p {
     margin-bottom: 4vh;
+    @include iPhoneHorizontalFont(font-size, 16px);
+  }
+}
+
+@mixin sectionHeaderEven() {
+  margin-top: 60px;
+  h1 {
+    font-family: $merienda;
+    letter-spacing: 3px;
+    @include paintedBackground();
+    @include boxShadowSmall();
+  }
+}
+
+@mixin sectionEven() {
+  @include sectionHeaderEven();
+  font-size: 20px;
+  height: 100vh;
+
+  @include textPadding();
+  @include iPhoneHorizontalSidePadding(padding-left, 5vw, padding-right, 5vw);
+
+  p {
+    margin-bottom: 4vh;
+    @include iPhoneHorizontalFont(font-size, 16px);
   }
 }
 
@@ -101,15 +135,4 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
-}
-
-@mixin section() {
-  @include sectionHeader();
-  font-size: 20px;
-
-  @include textPadding();
-
-  @include iPhoneHorizontalSidePadding(padding-left, 5vw, padding-right, 5vw);
-
-  @include iPhoneHorizontalFont(font-size, $pFontSizeHorizontaliPhone);
 }

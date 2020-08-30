@@ -13,6 +13,8 @@ $headerArticles: #e06752;
 $headerArticlesHover: #fc9583;
 $headerContact: #f32d8f;
 $headerContactHover: #fa7ab9;
+$outlineMagenta: #bd1891;
+$outlineHover: #fa23c1;
 
 //testing fonts
 $amatic: "Amatic SC Regular";
@@ -20,17 +22,21 @@ $badScript: "Bad Script Regular";
 $caveat: "Caveat Regular";
 $delius: "Delius Swash Caps";
 $handlee: "Handlee Regular";
+$euphoria: "Euphoria Script";
+$merienda: "Merienda One";
 
 //font vars
-$hfont1: "Clicker Script";
+$helloFont: "Clicker Script";
 $hfont2: "Rochester Regular";
 $paragraph: "Mullish Regular";
 $helloFontSize: calc(20px + 20vw);
-$pFontSize: calc(16px + 1vh);
-$h1FontSize: calc(24px + 4vw);
-$h2FontSize: calc(20px + 2vw);
+$pFontSize: calc(14px + 1vh);
+$h1FontSize: calc(22px + 2vh);
+$h2FontSize: calc(20px + 1vh);
+$h3FontSize: calc(16px + 1vh);
+$navFontSize: 0.8rem;
 $helloFontSizeHorizontaliPhone: calc(20px + 12vw);
-$pFontSizeHorizontaliPhone: calc(16px);
+$pFontSizeHorizontaliPhone: 16px;
 
 //shadow var
 $imageShadow: 4px 4px 15px rgba(21, 30, 54, 0.5);

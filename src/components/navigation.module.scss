@@ -3,6 +3,10 @@
 
 //hamburger menu styles
 
+* {
+  font-size: $navFontSize;
+}
+
 .container {
   width: 100%;
   display: flex;

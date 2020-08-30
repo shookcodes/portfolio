@@ -1,17 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/global.scss";
 import { IoIosArrowDropdown } from "react-icons/io";
 import About from "./about.js";
-import Header from "../components/Header.js";
+import ArticlesPreview from "./articlespreview.js";
+import Contact from "./contact.js";
+import { Header, MobileHeader } from "../components/Header.js";
 import { Link } from "react-scroll";
 
 
+function ChangeHeader() {
 
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+  return { width };
+}
 
 export default function Home() {
+  const { width } = ChangeHeader();
+  const breakpoint = 760;
+
+
   return (
     <div>
-      <Header />
+      {width < breakpoint ? <MobileHeader /> : <Header />}
       <div className="backsplash"> </div>
       <div className="container">
 
@@ -33,7 +52,9 @@ export default function Home() {
 
         ><IoIosArrowDropdown className="down" /></Link>
       </div >
-      <About id="about" />
+      <About id="about" className="section" />
+      <ArticlesPreview id="articlesPreview" className="section" />
+      <Contact id="contact" className="section" />
 
     </div>
 
@@ -41,8 +62,5 @@ export default function Home() {
 }
 
 
-const ScrollToLink = () => (
-  <Link to="#about">About</Link>
-)
 
 

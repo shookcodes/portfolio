@@ -1,0 +1,60 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.title {
+  color: $headerContact;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 5vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+label {
+  display: none;
+}
+
+input {
+  text-align: left;
+  padding: 7px;
+  border-radius: 7px;
+  border: 2px solid $headerContact;
+
+  &:focus {
+    border-radius: 7px;
+    border: 2px solid $outlineMagenta;
+    outline: none;
+  }
+}
+
+.short {
+  width: 40%;
+  margin: 2%;
+}
+
+.long {
+  width: 84%;
+  margin: 2%;
+}
+
+textarea {
+  margin: 2%;
+  padding: 7px;
+  border: 2px solid $headerContact;
+
+  width: 84%;
+  height: 250px;
+  border-radius: 7px;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-align: left;
+  resize: vertical;
+
+  &:focus {
+    border-radius: 7px;
+    border: 2px solid $outlineMagenta;
+    outline: none;
+  }
+}

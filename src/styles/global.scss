@@ -35,23 +35,41 @@
   font-family: "Handlee Regular";
   src: url("../../static/fonts/Handlee-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Euphoria Script";
+  src: url("../../static/fonts/EuphoriaScript-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merienda One";
+  src: url("../../static/fonts/MeriendaOne-Regular.ttf") format("truetype");
+}
 
 * {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 0;
   margin: 0;
   background: $white;
   text-align: center;
   font-family: $paragraph;
+  font-size: $pFontSize;
 
   h1 {
     font-size: $h1FontSize;
     padding-top: 4vh;
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
   }
 
   h2 {
-    padding-top: 4vh;
+    font-size: $h2FontSize;
+    padding-bottom: 2vh;
+    color: $outlineMagenta;
+    margin-top: 10vh;
+  }
+
+  h3 {
+    font-size: $h3FontSize;
     padding-bottom: 2vh;
   }
 }
@@ -63,6 +81,7 @@ html {
 p {
   font-family: $paragraph;
   font-size: $pFontSize;
+  padding-bottom: 2vh;
 }
 
 //home page styles
@@ -88,11 +107,13 @@ p {
   width: 100%;
   height: 100vh;
   margin-top: 60px;
+  perspective-origin: 0%;
+  //overflow-y: scroll;
 }
 
 .hello {
   font-size: $helloFontSize;
-  font-family: $hfont1;
+  font-family: $helloFont;
   font-weight: bolder;
   text-align: center;
   justify-content: center;
@@ -120,28 +141,30 @@ p {
   margin-right: 0;
   width: 6vh;
   height: 6vh;
-  color: $brightCoral;
+  color: $outlineMagenta;
   align-self: center;
   z-index: 100;
   background: transparent;
+  cursor: pointer;
+
   &:hover,
   &:focus {
-    color: $coralHover;
+    color: $outlineHover;
   }
 
   @include iPhoneHorizontalTop(padding-top, -12vh, margin-top, -12vh);
 }
 
-//about page styles
-.about {
-  @include section();
-  h2 {
-    color: $darkPurple;
-    font-family: $handlee;
-    font-size: $h2FontSize;
-  }
+//section styless
+.section {
+  min-height: 100vh;
+  height: 100%;
+  padding: 0 5vw;
+  margin-bottom: 8vh;
+  position: relative;
+  background: white;
+}
 
-  .dev-icons {
-    font-size: 5vh;
-  }
+.icons {
+  font-size: 5vh;
 }
