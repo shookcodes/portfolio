@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../styles/global.scss";
 import { IoIosArrowDropdown } from "react-icons/io";
+import Skills from "./skills.js";
 import About from "./about.js";
-import ArticlesPreview from "./articlespreview.js";
+import ArticleList from "./articles.js";
 import Contact from "./contact.js";
 import { Header, MobileHeader } from "../components/Header.js";
 import { Link } from "react-scroll";
@@ -53,7 +54,8 @@ export default function Home() {
         ><IoIosArrowDropdown className="down" /></Link>
       </div >
       <About id="about" className="section" />
-      <ArticlesPreview id="articlesPreview" className="section" />
+      <Skills id="skills" className="skills" />
+      <ArticleList id="ArticleList" className="section" />
       <Contact id="contact" className="section" />
 
     </div>

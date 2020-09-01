@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
+  height: 100%;
 }
 
 .iconCard {
@@ -14,21 +15,56 @@
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3vh;
+  margin: 2vh 4vw;
+  height: 100%;
 
-  .iconTitle {
+  .header {
     text-align: center;
+    color: $headerSkills;
   }
 
   .iconList {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 250px;
-  }
-}
+    max-width: 300px;
+    padding-bottom: 2vh;
 
-.icon {
-  font-size: 5vh;
-  margin: 0 1vw;
-  margin-bottom: 1vh;
+    .iconSpan {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      padding-bottom: 2vh;
+
+      .iconText {
+        text-align: center;
+        display: none;
+        font-size: 0.7rem;
+      }
+
+      &:hover .iconText,
+      &:active .iconText {
+        display: inline-block;
+      }
+
+      .icon {
+        font-size: 5vh;
+        margin: 1vh 2vw;
+        margin-bottom: 2vh;
+        padding: auto 1.5vw;
+
+        &:hover,
+        &:active {
+          filter: brightness(1.3);
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
 }

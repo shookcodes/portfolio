@@ -1,23 +1,36 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-.title {
+.header {
   color: $headerAbout;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }
 
-.container {
-  top: 0;
-  left: 0;
-  width: 90vw;
-  height: 100%;
+.section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  flex-wrap: wrap-reverse;
+  padding-left: 2vw;
+  padding-right: 2vw;
 
-  .text p {
-    text-align: left;
+  justify-content: space-evenly;
+
+  .text {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    max-width: 800px;
+    p {
+      text-align: left;
+    }
+  }
+  .photo {
+    max-width: 800px;
+    max-height: 70vh;
+    margin-bottom: 6vh;
+    margin-right: 2vw;
+    border-radius: 7px;
+    border: 2px solid $headerAbout;
   }
 }

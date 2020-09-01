@@ -27,12 +27,18 @@ export default function Skills() {
 
 
     return (
-        <div className={style.section}>
-            <IconContainer>
-                <IconCard title="Languages" icons={Languages} />
-                <IconCard title="Frameworks" icons={FrameWorks} />
-                <IconCard title="Platforms" icons={Platforms} />
-            </IconContainer>
+        <div className="skills section">
+
+            <h1 className={style.header}>Skills</h1>
+            <div >
+                <div className="container">
+                    <IconContainer className={style.section}>
+                        <IconCard title="Languages" icons={Languages} />
+                        <IconCard title="Frameworks" icons={FrameWorks} />
+                        <IconCard title="Platforms" icons={Platforms} />
+                    </IconContainer>
+                </div>
+            </div>
         </div>
     )
 }

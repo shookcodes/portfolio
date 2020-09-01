@@ -1,8 +1,12 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-.title {
+.header {
   color: $headerContact;
+}
+
+form {
+  margin-bottom: 6vh;
 }
 
 fieldset {
@@ -24,7 +28,7 @@ input {
 
   &:focus {
     border-radius: 7px;
-    border: 2px solid $outlineMagenta;
+    border: 2px solid $headerContactHover;
     outline: none;
   }
 }
@@ -54,7 +58,22 @@ textarea {
 
   &:focus {
     border-radius: 7px;
-    border: 2px solid $outlineMagenta;
+    border: 2px solid $headerContactHover;
     outline: none;
+  }
+}
+
+.social {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.icon {
+  font-size: 5vh;
+
+  &:hover,
+  &:active {
+    filter: brightness(1.3);
+    transform: scale(1.25);
   }
 }

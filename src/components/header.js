@@ -30,6 +30,15 @@ function Header() {
                 >About</Link>
                 <Link
                     activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-60}
+                    duration={500}
+                    className={style.skills}
+                >Skills</Link>
+                <Link
+                    activeClass="active"
                     to="articles"
                     spy={true}
                     smooth={true}
@@ -109,6 +118,16 @@ function MobileHeader() {
                                 className={style.about}
                                 onClick={toggleMenu}
                             >About</Link>
+                            <Link
+                                activeClass="skills"
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-60}
+                                duration={500}
+                                className={style.skills}
+                                onClick={toggleMenu}
+                            >Skills</Link>
                             <Link
                                 activeClass="active"
                                 to="articles"

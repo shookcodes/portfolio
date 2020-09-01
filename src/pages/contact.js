@@ -1,17 +1,17 @@
 import React from "react"
-
 import style from "./contact.module.scss";
 
 
 import { FaTwitter } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
 export default function Contact() {
     return (
         <div>
             <div className="backsplash"></div>
             <div className="contact section" >
-                <h1 id="contacth1">Contact</h1>
+                <h1 className={style.header}>Contact</h1>
                 <form className={style.form} ><fieldset>
                     <label for="firstname">First Name:</label><input type="text" className={style.short} id="firstname" placeholder="First Name" />
                     <label for="lastname">Last Name:</label><input type="text" className={style.short} id="lastname" placeholder="Last Name" />
@@ -20,9 +20,12 @@ export default function Contact() {
                     <label for="message">Message:</label><textarea type="text" className={style.textbox} id="message" placeholder="Message" />
                 </fieldset> </form>
                 <div>
-                    <h2>Connect with Me</h2>
+                    <h3 className={style.header}>Connect with me!</h3>
                     <span className="icons">
-                        <FaTwitter className="icon" id="wp" style={{ color: '#1A91DA' }} /> <FaLinkedin className="icon" id="wp" style={{ color: '#0073B0' }} />
+                        <a className={style.social} href="https://twitter.com/joojaco" target="_blank"><FaTwitter className={style.icon} id="wp" style={{ color: '#1A91DA' }} /></a>
+                        <a className={style.social} href="https://github.com/joojaco" target="_blank"><FaGithub className={style.icon} id="wp" style={{ color: '#1c1c1c' }} /></a>
+                        <a className={style.social} href="https://linkedin.com/in/sarahshook" target="_blank"><FaLinkedin className={style.icon} id="wp" style={{ color: '#0073B0' }} /></a>
+
                     </span>
                 </div>
             </div>

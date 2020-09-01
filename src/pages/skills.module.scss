@@ -1,2 +1,15 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
+
+.header {
+  color: $headerSkills;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 0 auto;
+  min-width: 400px;
+}

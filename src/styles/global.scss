@@ -14,36 +14,6 @@
   src: url("../../static/fonts/Mulish-Regular.ttf") format("truetype");
 }
 
-//testing fonts
-@font-face {
-  font-family: "Amatic SC Regular";
-  src: url("../../static/fonts/AmaticSC-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Bad Script Regular";
-  src: url("../../static/fonts/BadScript-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Caveat Regular";
-  src: url("../../static/fonts/Caveat-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Delius Swash Caps";
-  src: url("../../static/fonts/DeliusSwashCaps-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Handlee Regular";
-  src: url("../../static/fonts/Handlee-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Euphoria Script";
-  src: url("../../static/fonts/EuphoriaScript-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Merienda One";
-  src: url("../../static/fonts/MeriendaOne-Regular.ttf") format("truetype");
-}
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -64,7 +34,6 @@
   h2 {
     font-size: $h2FontSize;
     padding-bottom: 2vh;
-    color: $outlineMagenta;
     margin-top: 10vh;
   }
 
@@ -109,6 +78,10 @@ p {
   margin-top: 60px;
   perspective-origin: 0%;
   //overflow-y: scroll;
+}
+
+#home {
+  padding-top: 15vh;
 }
 
 .hello {
@@ -163,6 +136,19 @@ p {
   margin-bottom: 8vh;
   position: relative;
   background: white;
+}
+
+.container {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: left;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 8vh;
 }
 
 .icons {

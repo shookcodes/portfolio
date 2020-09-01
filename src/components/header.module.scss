@@ -37,8 +37,8 @@
   .menuItems > * {
     height: 7vmax;
     width: 7vmax;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     z-index: 100;
     text-decoration: none;
     font-weight: bold;
@@ -81,6 +81,17 @@
     &:hover,
     &:focus {
       color: $headerArticlesHover;
+    }
+  }
+
+  .skills {
+    color: $headerSkills;
+    &:visited {
+      color: $headerSkills;
+    }
+    &:hover,
+    &:focus {
+      color: $headerSkillsHover;
     }
   }
 

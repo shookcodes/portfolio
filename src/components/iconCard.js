@@ -30,7 +30,7 @@ function IconCard(props) {
     return (
 
         <div className={style.iconCard}>
-            <h3 className={style.iconTitle}>{props.title}</h3>
+            <h3 className={style.header}>{props.title}</h3>
             <span className={style.iconList}>{props.icons}</span>
         </div>
 
@@ -40,16 +40,17 @@ function IconCard(props) {
 
 const Icon = props => {
     switch (props.name) {
-        case "powershell": return <PowerShell className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "html5": return <FaHtml5 className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "css3": return <FaCss3Alt className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "js": return <IoLogoJavascript className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "sql": return <AiOutlineConsoleSql className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "php": return <Php className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "react": return <FaReact className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "gatsby": return <RiGatsbyLine className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "powerschool": return <PowerSchool className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
-        case "wp": return <WordPress className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
+        case "powershell": return <span className={style.iconSpan}><PowerShell className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} />
+            <span className={style.iconText}>PowerShell</span></span>
+        case "html5": return <span className={style.iconSpan}><FaHtml5 className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>HTML5</span></span>
+        case "css3": return <span className={style.iconSpan}><FaCss3Alt className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>CSS3</span></span>
+        case "js": return <span className={style.iconSpan}><IoLogoJavascript className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>JavaScript</span></span>
+        case "sql": return <span className={style.iconSpan}><AiOutlineConsoleSql className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>SQL</span></span>
+        case "php": return <span className={style.iconSpan}><Php className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>PHP</span></span>
+        case "react": return <span className={style.iconSpan}><FaReact className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>React</span></span>
+        case "gatsby": return <span className={style.iconSpan}><RiGatsbyLine className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>Gatsby</span></span>
+        case "powerschool": return <span className={style.iconSpan}><PowerSchool className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>PowerSchool</span></span>
+        case "wp": return <span className={style.iconSpan}><WordPress className={style.icon} id={props.id} style={{ color: `${props.color}` }} alt={props.alt} /><span className={style.iconText}>WordPress</span></span>
         default: return <div />;
     }
 }
