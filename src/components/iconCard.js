@@ -20,8 +20,9 @@ import WordPress from "../svg/wordpress.svg"
 const IconContainer = ({ children }) => {
     return (
         <div className={style.container}>
-            {children}
-        </div>
+            <div className={style.cardContainer}>
+                {children}
+            </div></div>
     )
 }
 

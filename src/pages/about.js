@@ -10,20 +10,14 @@ export default function About() {
         <div className={style.about}>
             <div className="about section" >
                 <h1 className={style.header}>About</h1>
-                <div className="container">
+                <div className={style.container}>
                     <div className={style.section}>
                         <div className={style.text}>
                             <p>
-                                My love of technology originally comes from my mom, an artist by
-                                day who built her own PCs, enjoyed tinkering with network
-                                security, designed on early versions of Adobe Illustrator, and
-                                worked at CompUSA (remember those?) so she could benefit from the
-                                employer discounts. She passed her fascination in technology to
-                                me, and since I was little, I've enjoyed exploring multiple
-                                aspects of technology.
-            </p>
+                                I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and learning about technology. Sometimes when I'm bored, I'll pull a list of current processes running on my PC and research exactly what they do. <b>#NerdLife</b>
+                            </p>
                             <p>
-                                Currently I enjoy automation and getting things to work behind the
+                                I enjoy automation and getting things to work behind the
                                 scenes. This includes building reports in SQL so they can be
                                 imported via PowerShell into systems including O365, Adobe
                                 Connect, and PowerSchool.

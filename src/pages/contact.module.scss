@@ -63,6 +63,21 @@ textarea {
   }
 }
 
+.formButton {
+  background: $headerContact;
+  color: $white;
+  border-radius: 7px;
+  padding: 5px 20px;
+  border-style: solid;
+  border: $headerContact;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: $headerContactHover;
+  }
+}
+
 .social {
   padding-left: 2vw;
   padding-right: 2vw;

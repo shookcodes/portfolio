@@ -22,13 +22,20 @@
     flex-grow: 1;
     padding-bottom: 2vh;
     align-self: center;
+
+    a {
+      text-decoration: none;
+      overflow: visible;
+    }
   }
 
   .shook {
     left: 0;
     z-index: 1100;
     height: 5vmin;
+    min-height: 4vh;
     margin-top: 0;
+    padding-top: 0;
     margin-bottom: -2vh;
     margin-left: 2vw;
     cursor: pointer;
@@ -84,14 +91,14 @@
     }
   }
 
-  .skills {
-    color: $headerSkills;
+  .work {
+    color: $headerWork;
     &:visited {
-      color: $headerSkills;
+      color: $headerWork;
     }
     &:hover,
     &:focus {
-      color: $headerSkillsHover;
+      color: $headerWorkHover;
     }
   }
 
@@ -137,6 +144,34 @@
   }
 }
 
+.slideIn {
+  animation: slideIn 0.8s;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-right: -100vw;
+  }
+
+  100% {
+    marign-right: 0vw;
+  }
+}
+
+.slideOut {
+  animation: slideOut 0.8s;
+}
+
+@keyframes slideOut {
+  0% {
+    margin-right: 0vw;
+  }
+
+  100% {
+    marign-right: -100vw;
+  }
+}
+
 .backdrop {
   position: absolute;
 
@@ -155,8 +190,9 @@
     width: 100vw;
     height: 200vh;
     background-size: cover;
-    position: absolute;
+    position: fixed;
     align-self: center;
+    animation: slideIn 0.8s;
   }
 }
 
@@ -178,6 +214,7 @@
   transform: translateY(10%);
   display: none;
   opacity: 1;
+  animation: slideIn 0.9s;
 
   &::before {
     content: "";

@@ -2,7 +2,15 @@
 @import "../utilities/mixins";
 
 .header {
-  color: $headerSkills;
+  color: $headerWork;
+}
+
+p {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
 }
 
 .section {
@@ -12,4 +20,5 @@
   align-content: flex-start;
   margin: 0 auto;
   min-width: 400px;
+  padding: 0 2vw;
 }

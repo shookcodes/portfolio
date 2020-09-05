@@ -1,6 +1,12 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
+.container {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
 .header {
   color: $headerAbout;
   display: flex;
@@ -14,13 +20,12 @@
   flex-wrap: wrap-reverse;
   padding-left: 2vw;
   padding-right: 2vw;
-
   justify-content: space-evenly;
+  flex: 1 0 600px;
+  width: 100%;
 
   .text {
-    margin-left: 2vw;
-    margin-right: 2vw;
-    max-width: 800px;
+    flex: 1 0 60%;
     p {
       text-align: left;
     }
@@ -32,5 +37,9 @@
     margin-right: 2vw;
     border-radius: 7px;
     border: 2px solid $headerAbout;
+    margin-top: 0;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 4vh;
   }
 }

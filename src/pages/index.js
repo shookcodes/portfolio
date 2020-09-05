@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../styles/global.scss";
 import { IoIosArrowDropdown } from "react-icons/io";
-import Skills from "./skills.js";
+import Work from "./work.js";
 import About from "./about.js";
-import ArticleList from "./articles.js";
+//import ArticleList from "./articles.js";
 import Contact from "./contact.js";
 import { Header, MobileHeader } from "../components/Header.js";
 import { Link } from "react-scroll";
@@ -35,27 +35,28 @@ export default function Home() {
       <div className="backsplash"> </div>
       <div className="container">
 
-        <div id="home">
-          <h1 className="hello">Hello!</h1>
-        </div>
-        <div className="sarah">
-          I'm Sarah, and this is my little slice of internet to share my thoughts about code and development.
+        <div className="section">
+          <div id="home">
+            <h1 className="hello">Hello!</h1>
+          </div>
+          <div className="sarah">
+            I'm Sarah, and this is my little slice of internet to share my thoughts about code and development.
           </div>
 
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-          className="down-link"
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={500}
+            className="down-link"
 
-        ><IoIosArrowDropdown className="down" /></Link>
-      </div >
+          ><IoIosArrowDropdown className="down" /></Link>
+        </div >
+      </div>
       <About id="about" className="section" />
-      <Skills id="skills" className="skills" />
-      <ArticleList id="ArticleList" className="section" />
+      <Work id="work" className="work" />
       <Contact id="contact" className="section" />
 
     </div>

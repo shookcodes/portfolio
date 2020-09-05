@@ -37,7 +37,15 @@ function Header() {
                     duration={500}
                     className={style.work}
                 >Work</Link>
-
+                <Link
+                    activeClass="active"
+                    to="articles"
+                    spy={true}
+                    smooth={true}
+                    offset={-60}
+                    duration={500}
+                    className={style.articles}
+                >Articles</Link>
                 <Link
                     activeClass="active"
                     to="contact"
@@ -52,20 +60,18 @@ function Header() {
     );
 };
 
+
 function MobileHeader() {
-
-
 
     const [showBg, setShowBg] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
 
-
     function toggleMenu() {
+
         setShowBg(!showBg)
         setShowMenu(!showMenu)
 
     }
-
 
 
     return (
@@ -87,9 +93,9 @@ function MobileHeader() {
                 <div className={style.backdrop} style={{
                     display: showBg ? `block` : `none`,
                 }} >
-                    <div id="menu" className={style.menu} style={{
+                    <div id="menu" href="#menu" className={style.menu} style={{
                         display: showMenu ? `block` : `none`,
-                    }} >
+                    }}  >
 
                         <span className={style.x} onClick={toggleMenu} >x</span>
                         <nav className={style.hamburgerNav}>
@@ -123,7 +129,16 @@ function MobileHeader() {
                                 className={style.work}
                                 onClick={toggleMenu}
                             >Work</Link>
-
+                            <Link
+                                activeClass="active"
+                                to="articles"
+                                spy={true}
+                                smooth={true}
+                                offset={-60}
+                                duration={500}
+                                className={style.articles}
+                                onClick={toggleMenu}
+                            >Articles</Link>
                             <Link
                                 activeClass="active"
                                 to="contact"

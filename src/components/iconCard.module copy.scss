@@ -2,40 +2,31 @@
 @import "../utilities/mixins";
 
 .container {
-  height: 100%;
-  align-content: flex-start;
-}
-
-.cardContainer {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
-  align-content: flex-start;
+  height: 100%;
 }
 
 .iconCard {
-  display: grid;
+  display: flex;
   text-align: center;
-  align-content: center;
+  justify-content: center;
   flex-direction: column;
   margin: 2vh 4vw;
   height: 100%;
-  justify-items: center;
 
   .header {
-    margin-top: 2vh;
     text-align: center;
     color: $headerWork;
-    justify-items: center;
   }
 
   .iconList {
-    display: grid;
-    align-content: start;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 250px;
     max-width: 300px;
     padding-bottom: 2vh;

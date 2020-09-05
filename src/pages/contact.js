@@ -12,13 +12,14 @@ export default function Contact() {
             <div className="backsplash"></div>
             <div className="contact section" >
                 <h1 className={style.header}>Contact</h1>
-                <form className={style.form} ><fieldset>
+                <form className={style.form} action="https://formspree.io/xknqlpde" method="POST"><fieldset>
                     <label for="firstname">First Name:</label><input type="text" className={style.short} id="firstname" placeholder="First Name" />
                     <label for="lastname">Last Name:</label><input type="text" className={style.short} id="lastname" placeholder="Last Name" />
-                    <label for="email">Email Address:</label><input type="text" className={style.long} id="email" placeholder="Email Address" />
+                    <label for="email">Email Address:</label><input type="text" className={style.long} id="email" name="_replyto" placeholder="Email Address" />
                     <br></br>
                     <label for="message">Message:</label><textarea type="text" className={style.textbox} id="message" placeholder="Message" />
-                </fieldset> </form>
+                </fieldset>
+                    <button className={style.formButton} type="submit">Send</button></form>
                 <div>
                     <h3 className={style.header}>Connect with me!</h3>
                     <span className="icons">
