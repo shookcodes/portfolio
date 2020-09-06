@@ -33,7 +33,8 @@ module.exports = {
     `gatsby-plugin-smoothscroll`,
     `react-router-dom`,
     `smooth-scroll`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    `browser-monads`
 
   ],
 }
