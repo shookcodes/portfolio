@@ -5,7 +5,7 @@ import Work from "./work.js"
 import About from "./about.js"
 //import ArticleList from "./articles.js";
 import Contact from "./contact.js"
-import { Header, MobileHeader } from "../components/Header.js"
+import { Header, MobileHeader } from "../components/header.js"
 import { Link } from "react-scroll"
 import { window } from "browser-monads"
 
