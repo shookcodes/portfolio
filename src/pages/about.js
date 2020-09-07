@@ -6,7 +6,7 @@ import Sarah from "../img/sarahBg.jpg"
 export default function About() {
     return (
         <div className={style.about}>
-            <div className="about" >
+            <div className="about section" >
                 <h1 className={style.header}>About</h1>
                 <div className={style.container}>
                     <div className={style.section}>
@@ -30,7 +30,7 @@ export default function About() {
             </p>
                         </div>
 
-                        <img className={style.photo} src={Sarah} alt="Piture of Sarah" /></div>
+                        <img className={style.photo} src={Sarah} alt="Picture of Sarah" /></div>
                 </div>
             </div>
         </div>
