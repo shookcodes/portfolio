@@ -227,6 +227,10 @@ p {
   background: white;
   overflow: hidden;
   min-height: 100vh;
+
+  &:last-child {
+    margin-bottom: 0vh;
+  }
 }
 
 .container {
