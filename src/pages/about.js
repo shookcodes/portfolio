@@ -4,11 +4,9 @@ import Sarah from "../img/sarahBg.jpg"
 
 
 export default function About() {
-
-
     return (
         <div className={style.about}>
-            <div className="about section" >
+            <div className="about" >
                 <h1 className={style.header}>About</h1>
                 <div className={style.container}>
                     <div className={style.section}>

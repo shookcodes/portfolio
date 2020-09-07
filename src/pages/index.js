@@ -3,7 +3,6 @@ import "../styles/global.scss"
 import Home from "./home.js"
 import Work from "./work.js"
 import About from "./about.js"
-//import ArticleList from "./articles.js";
 import Contact from "./contact.js"
 import { Header, MobileHeader } from "../components/header.js"
 import { window } from "browser-monads"
