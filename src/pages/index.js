@@ -31,8 +31,8 @@ export default function App() {
     <div>
       {width < breakpoint ? <MobileHeader /> : <Header />}
       <Home id="home" className="section" />
-      <About id="about" className="about" />
-      <Work id="work" className="work" />
+      <About id="about" className="section" />
+      <Work id="work" className="section" />
       <Contact id="contact" className="section" />
     </div>
   )
