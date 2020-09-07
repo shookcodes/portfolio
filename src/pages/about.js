@@ -7,32 +7,30 @@ export default function About() {
     return (
 
         <div className="about section" >
-            <div className={style.about}>
-                <h1 className={style.header}>About</h1>
-                <div className={style.container}>
-                    <div className={style.section}>
-                        <div className={style.text}>
-                            <p>
-                                I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and learning about technology. I like understanding how things work; sometimes when I'm bored, I'll pull a list of current processes running on my PC and research exactly what they do (yes, I'm a nerd).
+            <h1 className={style.header}>About</h1>
+            <div className={style.container}>
+                <div className={style.section}>
+                    <div className={style.text}>
+                        <p>
+                            I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and learning about technology. I like understanding how things work; sometimes when I'm bored, I'll pull a list of current processes running on my PC and research exactly what they do (yes, I'm a nerd).
                             </p>
-                            <p>
-                                I enjoy automation and getting things to work behind the
-                                scenes. This includes building reports in SQL so they can be
-                                imported via PowerShell into systems including O365, Adobe
-                                Connect, and PowerSchool.
+                        <p>
+                            I enjoy automation and getting things to work behind the
+                            scenes. This includes building reports in SQL so they can be
+                            imported via PowerShell into systems including O365, Adobe
+                            Connect, and PowerSchool.
             </p>
-                            <p>
-                                I recently started my journey in front-end development, and work
-                                with Gatsby (and SASS) to deploy static sites.
+                        <p>
+                            I recently started my journey in front-end development, and work
+                            with Gatsby (and SASS) to deploy static sites.
             </p>
-                            <p>
-                                I also maintain the WordPress site for an online school, including
-                                PHP, HTML, and CSS code updates as needed.
+                        <p>
+                            I also maintain the WordPress site for an online school, including
+                            PHP, HTML, and CSS code updates as needed.
             </p>
-                        </div>
+                    </div>
 
-                        <img className={style.photo} src={Sarah} alt="Picture of Sarah" /></div>
-                </div>
+                    <img className={style.photo} src={Sarah} alt="Picture of Sarah" /></div>
             </div>
         </div>
 

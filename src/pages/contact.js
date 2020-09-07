@@ -9,7 +9,6 @@ import { FaGithub } from "react-icons/fa"
 export default function Contact() {
     return (
         <div>
-            <div className="backsplash"></div>
             <div className="contact section" >
                 <h1 className={style.header}>Contact</h1>
                 <form className={style.form} action="https://formspree.io/xknqlpde" method="POST"><fieldset>
