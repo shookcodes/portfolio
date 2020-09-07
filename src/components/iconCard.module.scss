@@ -10,9 +10,13 @@
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
   align-content: flex-start;
+
+  @media screen and (max-width: 1050px) {
+    flex-direction: column;
+  }
 }
 
 .iconCard {
@@ -20,7 +24,7 @@
   text-align: center;
   align-content: center;
   flex-direction: column;
-  margin: 2vh 4vw;
+  margin: 2vh 2.5vw;
   height: 100%;
   justify-items: center;
 

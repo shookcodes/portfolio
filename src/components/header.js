@@ -3,6 +3,7 @@ import style from "./header.module.scss";
 import { Link } from "react-scroll";
 import Shook from "../img/shook.png";
 import Hamburger from "./hamburger.js"
+import MenuLink from "./menuLink.js"
 
 function Header() {
     return (
@@ -10,43 +11,26 @@ function Header() {
             <div className={style.logo}>
                 <img src={Shook} className={style.shook} alt="Shook Codes" /></div>
             <nav className={style.menuItems} >
-                <Link
-                    activeClass="active"
+                <MenuLink
                     to="home"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
-                    className={style.home}
-                >Home</Link>
-                <Link
-                    activeClass="active"
+                    style={style.home}
+                    title="Home"
+                />
+                <MenuLink
                     to="about"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
-                    className={style.about}
-                >About</Link>
-                <Link
-                    activeClass="active"
+                    style={style.about}
+                    title="About"
+                />
+                <MenuLink
                     to="work"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
-                    className={style.work}
-                >Work</Link>
-
-                <Link
-                    activeClass="active"
+                    style={style.work}
+                    title="Work"
+                />
+                <MenuLink
                     to="contact"
-                    spy={true}
-                    smooth={true}
-                    offset={-60}
-                    duration={500}
-                    className={style.contact}
-                >Contact</Link>
+                    style={style.contact}
+                    title="Contact"
+                />
             </nav>
         </header>
     );
@@ -93,47 +77,30 @@ function MobileHeader() {
 
                         <span className={style.x} onClick={toggleMenu} >x</span>
                         <nav className={style.hamburgerNav}>
-                            <Link
-                                activeClass="active"
+                            <MenuLink
                                 to="home"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                className={style.home}
+                                style={style.home}
+                                title="Home"
                                 onClick={toggleMenu}
-                            >Home</Link>
-                            <Link
-                                activeClass="active"
+                            />
+                            <MenuLink
                                 to="about"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                className={style.about}
+                                style={style.about}
+                                title="About"
                                 onClick={toggleMenu}
-                            >About</Link>
-                            <Link
-                                activeClass="work"
+                            />
+                            <MenuLink
                                 to="work"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                className={style.work}
+                                style={style.work}
+                                title="Work"
                                 onClick={toggleMenu}
-                            >Work</Link>
-
-                            <Link
-                                activeClass="active"
+                            />
+                            <MenuLink
                                 to="contact"
-                                spy={true}
-                                smooth={true}
-                                offset={-60}
-                                duration={500}
-                                className={style.contact}
+                                style={style.contact}
+                                title="Contact"
                                 onClick={toggleMenu}
-                            >Contact</Link>
+                            />
                         </nav>
 
                     </div>

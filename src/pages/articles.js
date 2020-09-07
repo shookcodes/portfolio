@@ -1,7 +1,6 @@
 import React from "react"
 import style from "./articles.module.scss";
 //import ArticlePreview from "../../components/articlepreview.js"
-import ComingSoon from "./comingSoon.js"
 
 export default function ArticleList() {
     return (
@@ -10,7 +9,7 @@ export default function ArticleList() {
             <div className="articles section" >
                 <h1 className={style.header}>Articles</h1>
                 <div className={style.container}>
-                    <ComingSoon />
+
 
                 </div>
             </div>
