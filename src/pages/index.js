@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react"
 import "../styles/global.scss"
-import { IoIosArrowDropdown } from "react-icons/io"
+import Home from "./home.js"
 import Work from "./work.js"
 import About from "./about.js"
 //import ArticleList from "./articles.js";
 import Contact from "./contact.js"
 import { Header, MobileHeader } from "../components/header.js"
-import { Link } from "react-scroll"
 import { window } from "browser-monads"
 
 function ChangeHeader() {
@@ -23,37 +22,14 @@ function ChangeHeader() {
   return { width }
 }
 
-export default function Home() {
+export default function App() {
   const { width } = ChangeHeader()
   const breakpoint = 760
 
   return (
     <div>
       {width < breakpoint ? <MobileHeader /> : <Header />}
-      <div className="backsplash"> </div>
-      <div className="container">
-        <div className="section">
-          <div id="home">
-            <h1 className="hello">Hello!</h1>
-          </div>
-          <div className="sarah">
-            I'm Sarah, and this is my little slice of internet to share my experience and
-            thoughts about code and development.
-          </div>
-
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-60}
-            duration={500}
-            className="down-link"
-          >
-            <IoIosArrowDropdown className="down" />
-          </Link>
-        </div>
-      </div>
+      <Home id="home" className="section" />
       <About id="about" className="section" />
       <Work id="work" className="work" />
       <Contact id="contact" className="section" />
