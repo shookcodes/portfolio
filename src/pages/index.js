@@ -8,6 +8,7 @@ import Contact from "./contact.js"
 import { Header, MobileHeader } from "../components/header.js"
 import { window } from "browser-monads"
 
+
 function ChangeHeader() {
   const [width, setWidth] = useState(window.innerWidth)
 
@@ -30,7 +31,7 @@ export default function App() {
     <div>
       {width < breakpoint ? <MobileHeader /> : <Header />}
       <Home id="home" className="section" />
-      <About id="about" className="section" />
+      <About id="about" className="about" />
       <Work id="work" className="work" />
       <Contact id="contact" className="section" />
     </div>
