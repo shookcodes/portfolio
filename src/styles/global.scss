@@ -7,7 +7,6 @@
 
 @import "../utilities/variables";
 @import "../utilities/mixins";
-@import "../utilities/animations";
 
 @font-face {
   font-family: "Clicker Script";
@@ -227,6 +226,7 @@ p {
   position: relative;
   background: white;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .container {

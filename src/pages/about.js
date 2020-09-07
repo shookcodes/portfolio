@@ -14,7 +14,7 @@ export default function About() {
                     <div className={style.section}>
                         <div className={style.text}>
                             <p>
-                                I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and learning about technology. Sometimes when I'm bored, I'll pull a list of current processes running on my PC and research exactly what they do. <b>#NerdLife</b>
+                                I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and learning about technology. I like understanding how things work; sometimes when I'm bored, I'll pull a list of current processes running on my PC and research exactly what they do (yes, I'm a nerd).
                             </p>
                             <p>
                                 I enjoy automation and getting things to work behind the

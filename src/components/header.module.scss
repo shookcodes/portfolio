@@ -214,6 +214,10 @@
   padding-bottom: 1vh;
   cursor: pointer;
 
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.3s;
+
   &:hover .bar,
   &:active .bar {
     background: $outlineHover;
@@ -236,7 +240,7 @@
 }
 
 .backdrop {
-  position: absolute;
+  position: relative;
   z-index: 2500;
   width: 100vw;
   height: 200vh;
@@ -244,16 +248,19 @@
 
   &:after {
     content: "";
-    opacity: 0.8;
+    opacity: 0.7;
     background: $splashBackground;
     left: 0;
-    margin-top: 95vh;
+    margin-top: -5vh;
     width: 100vw;
     height: 200vh;
     background-size: cover;
     position: fixed;
     align-self: center;
-    animation: fadeIn linear 0.4s;
+    overflow: visible;
+    -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 }
 
@@ -275,7 +282,9 @@
   transform: translateY(10%);
   display: none;
   opacity: 1;
-  animation: fadeIn linear 0.6s;
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.4s;
 
   &::before {
     content: "";
