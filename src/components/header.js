@@ -9,7 +9,12 @@ function Header() {
     return (
         <header className={style.container} >
             <div className={style.logo}>
-                <img src={Shook} className={style.shook} alt="Shook Codes" /></div>
+                <Link activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-60}
+                    duration={500}><img src={Shook} className={style.shook} alt="Shook Codes" /></Link></div>
             <nav className={style.menuItems} >
                 <MenuLink
                     to="home"
