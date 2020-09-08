@@ -1,7 +1,6 @@
 import React from "react";
-import Sarah from "../img/sarahBg.jpg"
 import style from "./about.module.scss";
-
+import Sarah from "../img/sarahBg.jpg"
 
 export default function About() {
     return (

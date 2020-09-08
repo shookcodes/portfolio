@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
+import { Header, MobileHeader } from "../components/header.js"
 import Home from "./home.js"
 import About from "./about.js"
 import Work from "./work.js"
 import Contact from "./contact.js"
-import { Header, MobileHeader } from "../components/header.js"
 import "../styles/global.scss"
 import { window } from "browser-monads"
 
