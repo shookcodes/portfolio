@@ -37,4 +37,10 @@ module.exports = {
     `browser-monads`
 
   ],
-}
+},
+
+  exports.onCreateWebpackConfig = ({ actions }) => {
+    actions.setWebpackConfig({
+      devtool: 'eval-source-map',
+    })
+  }

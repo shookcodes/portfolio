@@ -33,7 +33,7 @@ export default function Skills() {
             <div className={style.section}>
                 <div className={style.text}>
                     <p>
-                        Most of my work involves custom Oracle SQL reports and automation using PowerShell and PHP. You can find samples of my work on my <a href="https://github.com/joojaco" target="_blank">Github</a> page.  An example of my front-end development work includes this portfolio, and I will be adding other samples here in the future.
+                        Most of my work involves custom Oracle SQL reports and automation using PowerShell and PHP. You can find samples of my work on my <a href="https://github.com/joojaco" target="_blank" rel="noreferrer">Github</a> page.  An example of my front-end development work includes this portfolio, and I will be adding other samples here in the future.
                             </p>
                 </div>
             </div>
