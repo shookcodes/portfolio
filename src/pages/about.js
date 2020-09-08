@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./about.module.scss";
 import Sarah from "../img/sarahBg.jpg"
+import style from "./about.module.scss";
 
 
 export default function About() {
@@ -31,7 +31,7 @@ export default function About() {
             </p>
                     </div>
 
-                    <img className={style.photo} src={Sarah} alt="Picture of Sarah" /></div>
+                    <img className={style.photo} src={Sarah} alt="Headshot of Sarah" /></div>
             </div>
         </div>
 

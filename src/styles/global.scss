@@ -70,6 +70,8 @@ html {
 p {
   font-family: $paragraph;
   font-size: $pFontSize;
+  padding-left: 2vw;
+  padding-right: 2vw;
   padding-bottom: 2vh;
 }
 
@@ -221,8 +223,7 @@ p {
 //section styles
 .section {
   height: 100%;
-  padding: 0 5vw;
-  margin-bottom: 8vh;
+  margin-bottom: 18vh;
   position: relative;
   background: white;
   overflow: hidden;

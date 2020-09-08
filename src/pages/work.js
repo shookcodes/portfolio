@@ -1,6 +1,5 @@
 
 import React from "react";
-import "../styles/global.scss";
 import style from "./work.module.scss";
 
 import { IconContainer, IconCard, Icon } from "../components/iconCard.js";
@@ -30,24 +29,22 @@ export default function Skills() {
         <div className="work">
 
             <h1 className={style.header}>Work</h1>
-            <div >
-                <div className="container">
-                    <div className={style.section}>
-                        <div className={style.text}>
-                            <p>
-                                Most of my work involves custom Oracle SQL reports and automation using PowerShell and PHP. You can find samples of my work on my <a href="https://github.com/joojaco" target="_blank">Github</a> page.  An example of my front-end development work includes this portfolio, and I will be adding other samples here in the future.
+
+            <div className={style.section}>
+                <div className={style.text}>
+                    <p>
+                        Most of my work involves custom Oracle SQL reports and automation using PowerShell and PHP. You can find samples of my work on my <a href="https://github.com/joojaco" target="_blank">Github</a> page.  An example of my front-end development work includes this portfolio, and I will be adding other samples here in the future.
                             </p>
-                        </div>
-                    </div>
-                    <div className={style.section}>
-                        <IconContainer className={style.section}>
-                            <IconCard title="Languages" icons={Languages} />
-                            <IconCard title="Frameworks" icons={FrameWorks} />
-                            <IconCard title="Platforms" icons={Platforms} />
-                        </IconContainer>
-                    </div>
                 </div>
             </div>
+            <div className={style.section}>
+                <IconContainer className={style.section}>
+                    <IconCard title="Languages" icons={Languages} />
+                    <IconCard title="Frameworks" icons={FrameWorks} />
+                    <IconCard title="Platforms" icons={Platforms} />
+                </IconContainer>
+            </div>
+
         </div>
     )
 }
