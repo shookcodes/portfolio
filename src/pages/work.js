@@ -1,6 +1,6 @@
 
 import React from "react";
-import style from "../styles/work.module.scss";
+import style from "../styles/3work.module.scss";
 
 import { IconContainer, IconCard, Icon } from "../components/iconCard.js";
 
