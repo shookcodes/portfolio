@@ -1,6 +1,6 @@
 import React from "react";
 import Sarah from "../img/sarahBg.jpg"
-import style from "./about.module.scss";
+import style from "../styles/about.module.scss";
 
 
 export default function About() {
