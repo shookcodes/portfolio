@@ -1,5 +1,5 @@
 import React from "react"
-import style from "../styles/4contact.module.scss";
+import style from "./contact.module.scss";
 import { FaTwitter } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"

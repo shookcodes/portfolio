@@ -1,5 +1,5 @@
 import React from "react"
-import style from "../pages/articles.module.scss";
+import style from "../pages/2articles.module.scss";
 
 export default function ArticlePreview() {
     return (

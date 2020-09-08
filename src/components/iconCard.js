@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/global.scss";
 import style from "./iconCard.module.scss";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
