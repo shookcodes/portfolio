@@ -9,7 +9,7 @@ import { FaGithub } from "react-icons/fa"
 export default function Contact() {
     return (
         <div className={style.container}>
-            <div className="contact section" >
+            <div className="contact" >
                 <h1 className={style.header}>Contact</h1>
                 <form className={style.form} action="https://formspree.io/xknqlpde" method="POST"><fieldset>
                     <label for="firstname">First Name:</label><input type="text" className={style.short} id="firstname" placeholder="First Name" />

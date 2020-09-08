@@ -27,7 +27,7 @@ export default function Skills() {
 
 
     return (
-        <div className="work section">
+        <div className="work">
 
             <h1 className={style.header}>Work</h1>
             <div >
