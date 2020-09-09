@@ -5,7 +5,8 @@ import Work from "./work.js"
 import Contact from "./contact.js"
 import "../styles/global.scss"
 import Home from "./home.js"
-import { window } from "browser-monads"
+// @ts-ignore
+import { window } from "browser-monads";
 
 
 function ChangeHeader() {
@@ -29,10 +30,12 @@ export default function App() {
   return (
     <div>
       {width < breakpoint ? <MobileHeader /> : <Header />}
-      <Home id="home" className="section" />
-      <About id="about" className="section" />
-      <Work id="work" className="section" />
-      <Contact id="contact" className="section" />
+      <div>
+        <Home id="home" className="section" />
+        <About id="about" className="section" />
+        <Work id="work" className="section" />
+        <Contact id="contact" className="section" />
+      </div>
     </div>
   )
 }

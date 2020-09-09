@@ -6,19 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  siteMetadata: {
-    title: 'Shook',
-    menuLinks: [
-      {
-        name: 'home',
-        linkId: '#'
-      },
-      {
-        name: 'about',
-        linkId: '#about'
-      }
-    ]
-  },
+
   plugins: [
     {
       resolve: "gatsby-plugin-react-svg",
@@ -37,10 +25,6 @@ module.exports = {
     `browser-monads`
 
   ],
-},
+}
 
-  exports.onCreateWebpackConfig = ({ actions }) => {
-    actions.setWebpackConfig({
-      devtool: 'eval-source-map',
-    })
-  }
+
