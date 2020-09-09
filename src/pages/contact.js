@@ -10,8 +10,8 @@ export default function Contact() {
             <div className="contact" >
                 <h1 className={style.header}>Contact</h1>
                 <form className={style.form} action="https://formspree.io/xknqlpde" method="POST"><fieldset>
-                    <label htmlFor="firstname" id="firstnameLabel" >First Name:</label><input type="text" className={style.short} id="firstname" placeholder="First Name" />
-                    <label htmlFor="lastname" id="lastnameLabel">Last Name:</label><input type="text" className={style.short} id="lastname" placeholder="Last Name" />
+                    <label htmlFor="firstname" id="firstnameLabel" >First Name:</label><input type="text" className={style.short} name="firstname" placeholder="First Name" />
+                    <label htmlFor="lastname" id="lastnameLabel">Last Name:</label><input type="text" className={style.short} name="lastname" placeholder="Last Name" />
                     <label htmlFor="email" id="emailLabel">Email Address:</label><input type="text" className={style.long} id="email" name="_replyto" placeholder="Email Address" />
                     <br></br>
                     <label htmlFor="message" id="messageLabel">Message:</label><textarea type="text" className={style.textbox} name="message" id="message" placeholder="Message" />
