@@ -115,6 +115,8 @@
 @mixin paintedBackground() {
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   color: rgba(0, 0, 0, 0);
   background-image: $splashBackground;
   background-attachment: fixed;

@@ -14,7 +14,7 @@ export default function Contact() {
                     <label htmlFor="lastname" id="lastnameLabel">Last Name:</label><input type="text" className={style.short} id="lastname" placeholder="Last Name" />
                     <label htmlFor="email" id="emailLabel">Email Address:</label><input type="text" className={style.long} id="email" name="_replyto" placeholder="Email Address" />
                     <br></br>
-                    <label htmlFor="message" id="messageLabel">Message:</label><textarea type="text" className={style.textbox} id="message" placeholder="Message" />
+                    <label htmlFor="message" id="messageLabel">Message:</label><textarea type="text" className={style.textbox} name="message" id="message" placeholder="Message" />
                 </fieldset>
                     <button className={style.formButton} type="submit">Send</button></form>
                 <div>
