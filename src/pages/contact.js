@@ -10,11 +10,11 @@ export default function Contact() {
             <div className="contact" >
                 <h1 className={style.header}>Contact</h1>
                 <form className={style.form} action="https://formspree.io/xknqlpde" method="POST"><fieldset>
-                    <label htmlFor="firstname" id="firstnameLabel" >First Name:</label><input type="text" className={style.short} name="firstname" placeholder="First Name" required="" />
-                    <label htmlFor="lastname" id="lastnameLabel">Last Name:</label><input type="text" className={style.short} name="lastname" placeholder="Last Name" required="" />
-                    <label htmlFor="email" id="emailLabel">Email Address:</label><input type="text" className={style.long} id="email" name="_replyto" placeholder="Email Address" required="" />
+                    <label htmlFor="firstname" id="firstnameLabel" >First Name:</label><input type="text" className={style.short} name="firstname" placeholder="First Name" required />
+                    <label htmlFor="lastname" id="lastnameLabel">Last Name:</label><input type="text" className={style.short} name="lastname" placeholder="Last Name" required />
+                    <label htmlFor="email" id="emailLabel">Email Address:</label><input type="text" className={style.long} id="email" name="_replyto" placeholder="Email Address" required />
                     <br></br>
-                    <label htmlFor="message" id="messageLabel">Message:</label><textarea type="text" className={style.textbox} name="message" id="message" placeholder="Message" required="" />
+                    <label htmlFor="message" id="messageLabel">Message:</label><textarea type="text" className={style.textbox} name="message" id="message" placeholder="Message" required />
                 </fieldset>
                     <button className={style.formButton} type="submit">Send</button></form>
                 <div>
