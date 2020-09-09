@@ -12,10 +12,10 @@ export default function About() {
                 <div className={style.section}>
                     <div className={style.text}>
                         <p>
-                            I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and learning about technology. I like understanding how things work; sometimes when I'm bored, I'll pull a list of current processes running on my PC and research exactly what they do (yes, I'm a nerd).
+                            I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and digging into technology.
                             </p>
                         <p>
-                            I enjoy automation and getting things to work behind the
+                            I like to automate processes and get things working behind the
                             scenes. This includes building reports in SQL so they can be
                             imported via PowerShell into systems including O365, Adobe
                             Connect, and PowerSchool.
@@ -25,8 +25,8 @@ export default function About() {
                             with Gatsby (and SASS) to deploy static sites.
             </p>
                         <p>
-                            I also maintain the WordPress site for an online school, including
-                            PHP, HTML, and CSS code updates as needed.
+                            I also maintain a WordPress site for a non-profit organization, with code updates including
+                            PHP, HTML, and CSS.
             </p>
                     </div>
 
