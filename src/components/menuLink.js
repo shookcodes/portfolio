@@ -13,6 +13,7 @@ export default function MenuLink(props) {
             duration={500}
             className={props.style}
             onClick={props.onClick}
+            tabIndex="0"
         >{props.title}</Link>
     )
 }

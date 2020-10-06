@@ -14,12 +14,14 @@ function Header() {
                     spy={true}
                     smooth={true}
                     offset={-60}
-                    duration={500}><img src={Shook} className={style.shook} alt="Shook Codes" /></Link></div>
+                    duration={500}><img src={Shook} className={style.shook} alt="Shook Codes"
+                        tabIndex="0" /></Link></div>
             <nav className={style.menuItems} >
                 <MenuLink
                     to="home"
                     style={style.home}
                     title="Home"
+
                 />
                 <MenuLink
                     to="about"
