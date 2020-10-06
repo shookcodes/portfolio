@@ -10,7 +10,7 @@ import { window } from "browser-monads";
 
 function tabIndexEvent() {
   document.addEventListener('focus', function () {
-    console.log('focused: ', document.activeElement)
+    //console.log('focused: ', document.activeElement)
   }, true);
 
   document.activeElement.addEventListener("keyup", function (event) {
