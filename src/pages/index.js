@@ -8,6 +8,19 @@ import Home from "./home.js"
 // @ts-ignore
 import { window } from "browser-monads";
 
+function tabIndexEvent() {
+  document.addEventListener('focus', function () {
+    console.log('focused: ', document.activeElement)
+  }, true);
+
+  document.activeElement.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13 || event.keyCode === 32) {
+      event.preventDefault();
+      document.activeElement.click();
+    }
+  });
+}
+
 
 function ChangeHeader() {
   const [width, setWidth] = useState(window.innerWidth)
@@ -24,6 +37,7 @@ function ChangeHeader() {
 }
 
 export default function App() {
+  tabIndexEvent();
   const { width } = ChangeHeader()
   const breakpoint = 760
 
@@ -31,10 +45,10 @@ export default function App() {
     <div>
       {width < breakpoint ? <MobileHeader /> : <Header />}
       <div>
-        <Home id="home" className="section" />
-        <About id="about" className="section" />
-        <Work id="work" className="section" />
-        <Contact id="contact" className="section" />
+        <Home id="home" className="section" tabIndex="0" />
+        <About id="about" className="section" tabIndex="0" />
+        <Work id="work" className="section" tabIndex="0" />
+        <Contact id="contact" className="section" tabIndex="0" />
       </div>
     </div>
   )
