@@ -25,6 +25,7 @@ export default function Home() {
                         offset={-60}
                         duration={500}
                         className="down-link"
+                        tabIndex="0"
                     >
                         <IoIosArrowDropdown className="down" />
                     </Link>
