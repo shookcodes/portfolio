@@ -11,14 +11,16 @@
   position: relative;
 
   flex: 1 1 400px;
-  height: 20vh;
+  height: 30vh;
   min-height: 250px;
-  max-height: 500px;
+  max-height: 700px;
+  max-width: 500px;
   border: 1px solid $headerArticles;
   border-radius: 7px;
-  margin: 2vmax;
+  margin-left: 4vw;
   padding: 2vmax;
   cursor: pointer;
+  overflow: hidden;
 
   h2,
   h3 {
@@ -62,8 +64,10 @@
     text-align: left;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+    line-height: 1.7;
+    padding-bottom: 2vh;
   }
 }
 

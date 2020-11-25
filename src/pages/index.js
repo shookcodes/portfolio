@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Header, MobileHeader } from "../components/header.js"
 import About from "./about.js"
 import Work from "./work.js"
+import Articles from "./articles.js"
 import Contact from "./contact.js"
 import "../styles/global.scss"
 import Home from "./home.js"
@@ -9,9 +10,9 @@ import Home from "./home.js"
 import { window } from "browser-monads";
 
 function tabIndexEvent() {
-  document.addEventListener('focus', function () {
-    //console.log('focused: ', document.activeElement)
-  }, true);
+  /*document.addEventListener('focus', function () {
+    console.log('focused: ', document.activeElement)
+  }, true); */
 
   document.activeElement.addEventListener("keyup", function (event) {
     if (event.keyCode === 13 || event.keyCode === 32) {
@@ -48,6 +49,7 @@ export default function App() {
         <Home id="home" className="section" tabIndex="0" />
         <About id="about" className="section" tabIndex="0" />
         <Work id="work" className="section" tabIndex="0" />
+        <Articles id="articles" className="section" tabIndex="0" />
         <Contact id="contact" className="section" tabIndex="0" />
       </div>
     </div>

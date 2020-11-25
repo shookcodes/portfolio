@@ -34,6 +34,11 @@ function Header() {
                     title="Work"
                 />
                 <MenuLink
+                    to="articles"
+                    style={style.articles}
+                    title="Articles"
+                />
+                <MenuLink
                     to="contact"
                     style={style.contact}
                     title="Contact"

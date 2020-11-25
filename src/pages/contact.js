@@ -20,8 +20,8 @@ export default function Contact() {
                 <div>
                     <h3 className={style.header}>Connect with me!</h3>
                     <span className="icons">
-                        <a className={style.social} href="https://twitter.com/joojaco" target="_blank" rel="noreferrer"><FaTwitter className={style.icon} id="wp" style={{ color: '#1A91DA' }} /></a>
-                        <a className={style.social} href="https://github.com/joojaco" target="_blank" rel="noreferrer"><FaGithub className={style.icon} id="wp" style={{ color: '#1c1c1c' }} /></a>
+                        <a className={style.social} href="https://twitter.com/shookcodes" target="_blank" rel="noreferrer"><FaTwitter className={style.icon} id="wp" style={{ color: '#1A91DA' }} /></a>
+                        <a className={style.social} href="https://github.com/shookcodes" target="_blank" rel="noreferrer"><FaGithub className={style.icon} id="wp" style={{ color: '#1c1c1c' }} /></a>
                         <a className={style.social} href="https://linkedin.com/in/sarahshook" target="_blank" rel="noreferrer"><FaLinkedin className={style.icon} id="wp" style={{ color: '#0073B0' }} /></a>
 
                     </span>
