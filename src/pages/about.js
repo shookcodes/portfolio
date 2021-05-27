@@ -12,7 +12,7 @@ export default function About() {
                 <div className={style.section}>
                     <div className={style.text}>
                         <p>
-                            I'm a web developer currently based in California. When I'm not chasing my kids, I enjoy coding and digging into technology.
+                            I'm a web developer currently based in Texas. When I'm not chasing my kids, I enjoy coding and digging into technology.
                             </p>
                         <p>
                             I like to automate processes and get things working behind the

@@ -50,7 +50,6 @@ export default function App() {
         <Home id="home" className="section" tabIndex="0" />
         <About id="about" className="section" tabIndex="0" />
         <Work id="work" className="section" tabIndex="0" />
-        <Articles id="articles" className="section" tabIndex="0" />
         <Contact id="contact" className="section" tabIndex="0" />
       </div>
     </div>
