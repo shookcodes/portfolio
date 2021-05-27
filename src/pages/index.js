@@ -9,18 +9,19 @@ import Home from "./home.js"
 // @ts-ignore
 import { window } from "browser-monads";
 
-function tabIndexEvent() {
-  /*document.addEventListener('focus', function () {
-    console.log('focused: ', document.activeElement)
-  }, true); */
+//function tabIndexEvent() {
+//  /*document.addEventListener('focus', function () {
+//    console.log('focused: ', document.activeElement)
+//  }, true); */
+//
+//  document.activeElement.addEventListener("keyup", function (event) {
+//    if (event.keyCode === 13 || event.keyCode === 32) {
+//      event.preventDefault();
+//      document.activeElement.click();
+//    }
+//  });
+//}
 
-  document.activeElement.addEventListener("keyup", function (event) {
-    if (event.keyCode === 13 || event.keyCode === 32) {
-      event.preventDefault();
-      document.activeElement.click();
-    }
-  });
-}
 
 
 function ChangeHeader() {
@@ -38,7 +39,7 @@ function ChangeHeader() {
 }
 
 export default function App() {
-  tabIndexEvent();
+//  tabIndexEvent();
   const { width } = ChangeHeader()
   const breakpoint = 760
 
