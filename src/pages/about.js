@@ -21,12 +21,10 @@ export default function About() {
                             Connect, and PowerSchool.
             </p>
                         <p>
-                            I recently started my journey in front-end development, and work
-                            with Gatsby (and SASS) to deploy static sites.
+                            I currently freelance, helping build Gatsby sites with Prismic CMS (and GraphQL).
             </p>
                         <p>
-                            I also maintain a WordPress site for a non-profit organization, with code updates including
-                            PHP, HTML, and CSS.
+                            In my previous role, I maintained a WordPress site for a non-profit organization, with code updates including PHP, HTML, and CSS.
             </p>
                     </div>
 
