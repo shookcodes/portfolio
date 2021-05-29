@@ -13,8 +13,7 @@ export default function Home() {
                         <h1 className="hello">Hello!</h1>
                     </div>
                     <div className="sarah">
-                        I'm Sarah, and this is my little slice of internet to share my experience and
-                        thoughts about code and development.
+                        I'm Sarah, a full-stack developer who enjoys all things tech-related.
           </div>
 
                     <Link
